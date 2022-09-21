@@ -19,7 +19,8 @@ https://rithmschool.github.io/function-timer-demo/
 // O(n)
 function addUpToV1(n) {
    let total = 0; //1 operation
-   for(let i = 1; i<= n; i++) { //4n operations (i<=n: 2, i++: 2) + 1
+   for (let i = 1; i <= n; i++) {
+      //4n operations (i<=n: 2, i++: 2) + 1
       total += i; //2n operations (+ and =)
    }
    return total;
@@ -28,7 +29,7 @@ function addUpToV1(n) {
 
 // O(1)
 function addUpToV2(n) {
-   return n _ (n + 1) / 2;
+   return (n * (n + 1)) / 2;
    //3 operations (_, +, and /) : O(1)
 }
 
@@ -38,8 +39,8 @@ let t2 = performance.now();
 console.log(addUpToV2(1000000000));
 let t3 = performance.now();
 
-console.log(`V1: ${(t2-t1) /1000} seconds.`);
-console.log(`V2: ${(t3-t2) /1000} seconds.`);
+console.log(`V1: ${(t2 - t1) / 1000} seconds.`);
+console.log(`V2: ${(t3 - t2) / 1000} seconds.`);
 
 /*
 SPACE COMPLEXITY
@@ -65,7 +66,7 @@ function sum(arr) {
 // O(n) Linear space complexity
 function double(arr) {
    let newArr = [];
-   for(let i = 0; i < arr.length; i++) {
+   for (let i = 0; i < arr.length; i++) {
       newArr.push(2 * arr[i]);
    }
    return newArr;
