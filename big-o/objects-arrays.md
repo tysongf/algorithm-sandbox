@@ -1,34 +1,31 @@
-### Analyzing Performance of Arrays and Objects
+## Analyzing Performance of Arrays and Objects
 
-#### OBJECTS
+### OBJECTS
 
 CRUD Operations are in constant O(1) time.
 Search functions in linear O(n) time.
 
-Object.keys = O(n)
-Object.values = O(n)
-Object.entries = O(n)
-hasOwnProperty = O(1)
+| Feature        | Complexity |
+| :------------- | ---------: |
+| Object.keys    |       O(n) |
+| Object.values  |       O(n) |
+| Object.entries |       O(n) |
+| hasOwnProperty |       O(1) |
 
-#### ARRAYS
+### Array Methods
 
-Access element = O(1)
-Insert/Remove at the end = O(1) (push / pop)
-Insert/Remove at beginning = O(n) (shift / unshift)
-Searching = O(n)
+| Complexity  |         Formula | O-Notation |
+| :---------- | --------------: | ---------: |
+| linear      |      (f(n) = n) |       O(n) |
+| quadratic   |     (f(n) = n²) |      O(n²) |
+| constant    |      (f(n) = 1) |       O(1) |
+| logarithmic | (f(n) = log(n)) |   O(log n) |
+| others      |      f(n log n) | O(n log n) |
 
-#### Array Methods
-
-push O(1)
-pop O(1)
-shift O(n)
-unshift O(n)
-concat O(n)
-slice O(n)
-splice O(n)
-hasOwnProperty O(n)
-forEach O(n)
-map O(n)
-filter O(n)
-reduce O(n)
-sort O(n log n)
+| Feature                           | Complexity |                                                     Example |
+| :-------------------------------- | ---------: | ----------------------------------------------------------: |
+| Access element                    |       O(1) |                                                  myArray[7] |
+| Insert/Remove at end              |       O(1) |                                              .push() .pop() |
+| Insert/Remove at middle/beginning |       O(n) | .shift() .unshift() .slice() .splice() .concat() .forEach() |
+| Searching                         |       O(n) |                                  .filter() .reduce() .map() |
+| Sorting                           | 0(n log n) |                                                     .sort() |
