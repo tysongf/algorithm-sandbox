@@ -14,14 +14,6 @@ Search functions in linear O(n) time.
 
 ### Array Methods
 
-| Complexity  |         Formula | O-Notation |
-| :---------- | --------------: | ---------: |
-| linear      |      (f(n) = n) |       O(n) |
-| quadratic   |     (f(n) = n²) |      O(n²) |
-| constant    |      (f(n) = 1) |       O(1) |
-| logarithmic | (f(n) = log(n)) |   O(log n) |
-| others      |      f(n log n) | O(n log n) |
-
 | Feature                           | Complexity |                                                     Example |
 | :-------------------------------- | ---------: | ----------------------------------------------------------: |
 | Access element                    |       O(1) |                                                  myArray[7] |
@@ -29,3 +21,13 @@ Search functions in linear O(n) time.
 | Insert/Remove at middle/beginning |       O(n) | .shift() .unshift() .slice() .splice() .concat() .forEach() |
 | Searching                         |       O(n) |                                  .filter() .reduce() .map() |
 | Sorting                           | 0(n log n) |                                                     .sort() |
+
+### Complexity Notation
+
+| Complexity  |         Formula | O-Notation |
+| :---------- | --------------: | ---------: |
+| linear      |      (f(n) = n) |       O(n) |
+| quadratic   |     (f(n) = n²) |      O(n²) |
+| constant    |      (f(n) = 1) |       O(1) |
+| logarithmic | (f(n) = log(n)) |   O(log n) |
+| others      |      f(n log n) | O(n log n) |
