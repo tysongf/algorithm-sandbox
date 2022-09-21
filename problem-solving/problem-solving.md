@@ -4,7 +4,8 @@
 
    -  Restate the problem in your own words.
    -  Ask questions.
-   -  Write notes and pseudo-code.
+   -  Write notes.
+   -  Write pseudo-code.
    -  What are the inputs?
    -  What are the outputs?
    -  Can the outputs be determined from the inputs?
@@ -19,9 +20,9 @@
 3. Break it Down
 
    -  Think out loud.
-   -  Write down each step
-   -  Label important pieces of data
-   -  Write Pseudocode
+   -  Write down each step.
+   -  Label important pieces of data.
+   -  Write more pseudo-code.
 
 4. Solve / Simplify
 
@@ -30,3 +31,8 @@
    -  Incorporate the difficult part(s) back in.
 
 5. Look Back and Refactor
+
+   -  Avoid O(n²) complexities.
+   -  Simplify.
+   -  Avoid repetition.
+   -  SOLID design principles.
