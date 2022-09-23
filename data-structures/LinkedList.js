@@ -66,6 +66,24 @@ class LinkedList {
       return this;
    }
 
+   get(index) {
+      if (index < 0 || index >= this.length) return null;
+      let node = this.head;
+      for (let i = 0; i < this.length; i++) {
+         if (i === index) return node;
+         node = node.next;
+      }
+   }
+
+   set(index, val) {
+      let node = this.get(index);
+      if (node) {
+         node.val = val;
+         return true;
+      }
+      return false;
+   }
+
    traverse() {
       let current = this.head;
       while (current) {
@@ -79,8 +97,6 @@ const myList = new LinkedList();
 myList.push("Hello");
 myList.push("World");
 myList.push("!");
-myList.push("Pop Me!");
-myList.pop();
-myList.shift();
-console.log(myList);
+myList.set(1, "Mars");
 myList.traverse();
+console.log(myList.get(1));
