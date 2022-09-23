@@ -96,6 +96,17 @@ class LinkedList {
       this.length++;
    }
 
+   remove(index) {
+      if (index < 0 || index > this.length) return undefined;
+      if (index === 0) return this.shift();
+      if (index === this.length - 1) return this.pop();
+      let trailingNode = this.get(index - 1);
+      let removedNode = trailingNode.next;
+      trailingNode.next = removedNode.next;
+      this.length--;
+      return removedNode;
+   }
+
    traverse() {
       let current = this.head;
       while (current) {
@@ -107,5 +118,5 @@ class LinkedList {
 
 const myList = new LinkedList();
 myList.push(1).push(2).push(3).push(4);
-myList.insert(1, 69);
+console.log(`removing: ${myList.remove(1).val}`);
 myList.traverse();
