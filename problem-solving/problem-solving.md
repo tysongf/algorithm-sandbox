@@ -26,8 +26,8 @@
 
 4. Solve / Simplify
 
-   -  Skip / Sideline the difficult part(s)
-   -  Write a Simplified Solution
+   -  Skip / Sideline the difficult part(s).
+   -  Write a Simplified Solution.
    -  Incorporate the difficult part(s) back in.
 
 5. Look Back and Refactor
