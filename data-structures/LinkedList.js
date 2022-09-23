@@ -107,6 +107,23 @@ class LinkedList {
       return removedNode;
    }
 
+   reverse() {
+      // h        t
+      // 0->1->2->3
+      let node = this.head; //index node
+      this.head = this.tail; //swap head and tail
+      this.tail = node; //swap head and tail
+
+      let nextNode;
+      let prevNode = null;
+      for (let i = 0; i < this.length; i++) {
+         nextNode = node.next;
+         node.next = prevNode; //0 tail will have no next node.
+         prevNode = node; //set prevNode to the current node
+         node = nextNode; //set index node to the next node
+      }
+   }
+
    traverse() {
       let current = this.head;
       while (current) {
@@ -118,5 +135,5 @@ class LinkedList {
 
 const myList = new LinkedList();
 myList.push(1).push(2).push(3).push(4);
-console.log(`removing: ${myList.remove(1).val}`);
+myList.reverse();
 myList.traverse();
