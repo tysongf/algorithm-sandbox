@@ -15,6 +15,8 @@ function mostDigits(nums) {
    return maxDigits;
 }
 
+// O(nk) time complexity
+// O(n+k) space complexity
 function radixSort(nums) {
    let maxDigitCount = mostDigits(nums);
    for (let k = 0; k < maxDigitCount; k++) {
